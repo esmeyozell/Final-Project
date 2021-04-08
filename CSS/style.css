@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+/*styling*/
+
+/*FONTS*/
+
+:root {
+  --white: #f0efef;
+  --hot-pink: #ff69b4;
+  --light-coral: rgba(255, 127, 80, 0.548);
+  --robe-red:#fd4d17;
+  --light: 300;
+  --semibold: 600;
+  --extra-bold: 800;
+}
+
+@import url("https://use.typekit.net/yvm4rpb.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* link styling*/
+a:visited {
+  color: coral;
+}
+a:hover {
+    color: var(--hot-pink);
+}
+a:link {
+  text-decoration: none;
+  color: coral
+}
+
+
+main{
+  width: 100%;
+
+}
+
+body{
+  font-family: 'Space Mono', monospace;
+  margin: auto;
+  min-height: 100vh;
+  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+/*header backgroud styling*/
+@keyframes header {
+  from {background-image: linear-gradient(45deg, coral 25%, transparent 25%, transparent 75%,coral 75%, coral),
+    linear-gradient(45deg,#ff7f50, 25%, transparent 25%, transparent 75%, coral 75%, coral);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;;}
+  to {background-image: linear-gradient(45deg, pink 25%, transparent 25%, transparent 75%,pink 75%, pink),
+    linear-gradient(45deg,pink, 25%, transparent 25%, transparent 75%, pink 75%, pink);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;;}
+  }
+
+ /*---------*/
+  header{
+  min-height: 200px;
+  }
+
+  h1{
+  font-family: juniper-std, sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--robe-red);
+  text-align: center;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  padding: 0 auto;
+
+}
+
+  .topnav{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-family: juniper-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: coral;
+  font-size: 25px;
+  background-color: ivory;
+
+}
+
+ /*---------*/
+.hero {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 300px;
+  background-color:var(--light-coral);
+}
+
+
+ .hero img {
+  left: 15%;
+  position: relative;
+  height: 400px;
+ 
+}
+
+.text_box {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  left: 15%;
+  font-weight: 300;
+  font-size: 24px;
+  border-style: solid;
+  padding: 20px;
+  color:white;
+  border-style: solid;
+  border-color: var(--robe-red);
+  border-width: 2px;
+  
+}
+
+ /*---------*/
+
+.section_three {
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  font-family: juniper-std, sans-serif;
+  height: 500px;
+  background-color: ivory;
+  
+   
+}
+
+.photo_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.column {
+  padding: 2px; 
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 25%;
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-around;
+  
+
+}
+
+.row_pics{
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: flex;
+  width: auto;
+  height: auto;
+
+}
+
+.row_pics_text {
+  color: #ff69b4;
+  font-size: 24px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 260%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.column:hover .row_pics {
+  opacity: 0.3;
+}
+
+.column:hover .row_pics_text {
+  opacity: 1;
+}
+
+
+.ml11 {
+  text-align: center;
+  color: var(--robe-red);
+  font-size: 70px;
+
+ 
+}
+
+
+ /*---------*/
+
+footer{
+  display: flex;
+  background-color: pink;
+  font-size: 24px;
+}
+
+.right-menu {
+position: relative;
+left: 700px;
+top: 20px;
+margin: 24px;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  height: 100%;
+  overflow:scroll;
+  background-color: white;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  padding: 10px;
+  background-color: white;
+  
+}
+
+/* Add styles to the text in form container */
+.form-container label {
+  font-size: 18px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/close */
+.form-container .btn {
+  background-color:pink;
+  font-family: inherit;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.button-area {
+  padding-top: 20%;
+  display: flex;
+  
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
