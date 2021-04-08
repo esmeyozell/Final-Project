@@ -127,6 +127,17 @@ body{
   
 }
 
+@media screen and ( max-width: 600px ) {
+  .hero { flex-direction: column; 
+
+  }
+  .text_box {
+    width: 100%;
+    
+    
+  }
+}
+
  /*---------*/
 
 .section_three {
