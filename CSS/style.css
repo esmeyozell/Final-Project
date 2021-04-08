@@ -130,8 +130,8 @@ body{
  /*---------*/
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  [class*="col-"] {
+  @media only screen and (min-width: 600px) {
+  img.row_pics {
     width: 100%;
   }
 }
