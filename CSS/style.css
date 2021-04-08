@@ -129,16 +129,6 @@ body{
 
  /*---------*/
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (max-width: 600px) {
-  .photo_row {
-    flex-direction: column;
-  }
-  .row_pics {
-    width: 100%;
-  }
-}
-
 .section_three {
   /*display: flex;*/
   justify-content: center;
