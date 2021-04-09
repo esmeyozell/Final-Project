@@ -48,6 +48,10 @@ body{
 
 }
 
+@media screen and ( max-width: 600px ) {
+  main { width: 100%; }
+}
+
 
 /*header backgroud styling*/
 @keyframes header {
@@ -94,8 +98,9 @@ body{
 
 }
 
- /*---------*/
+ /*----HERO-----*/
 .hero {
+  padding: 5%;
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -103,36 +108,35 @@ body{
   background-color:var(--light-coral);
 }
 
+h3{
+  font-weight: 100;
+}
 
  .hero img {
-  left: 15%;
-  position: relative;
   height: 400px;
  
 }
 
 .text_box {
   text-align: center;
-  position: relative;
-  width: 50%;
-  left: 15%;
+  background-color: pink;
+  color: var(--robe-red);
   font-weight: 300;
   font-size: 24px;
-  border-style: solid;
-  padding: 20px;
-  color:white;
-  border-style: solid;
-  border-color: var(--robe-red);
-  border-width: 2px;
+  padding: 10px;
+  border:solid;
+  border-color: ivory;
   
 }
 
 @media screen and ( max-width: 600px ) {
   .hero { flex-direction: column; 
-
+    padding-bottom: 20px;
+    width: auto;
   }
   .text_box {
     width: 100%;
+    
     
     
   }
@@ -221,14 +225,20 @@ footer{
   display: flex;
   background-color: pink;
   font-size: 24px;
+
 }
 
-.right-menu {
-position: relative;
-left: 700px;
-top: 20px;
-margin: 24px;
+.footer-menu {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  justify-content: space-between;
+  padding-right: 20px;
+}
 
+@media screen and ( max-width: 600px ) {
+  .footer-menu { flex-direction: column; }
 }
 
 li {
