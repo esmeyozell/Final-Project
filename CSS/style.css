@@ -142,7 +142,7 @@ h3{
 
  /*---------*/
 
- @media screen and ( max-width: 600px ) {
+ @media screen and ( max-width: 414px ) {
   .photo_row { visibility: hidden; }
   
 }
