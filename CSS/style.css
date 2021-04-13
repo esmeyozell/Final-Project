@@ -118,6 +118,7 @@ h3{
 }
 
 .text_box {
+  width: 100%;
   text-align: center;
   background-color: pink;
   color: var(--robe-red);
@@ -145,12 +146,12 @@ h3{
  /*---------*/
 
 .section_three {
-  /*display: flex;*/
   justify-content: center;
   align-items: center;
   font-family: juniper-std, sans-serif;
   height: 500px;
   background-color: ivory;
+  padding-bottom: 20px;
   
    
 }
@@ -214,12 +215,10 @@ h3{
   text-align: center;
   color: var(--robe-red);
   font-size: 70px;
-
- 
 }
 
 
- /*---------*/
+ /*---FOOTER------*/
 
 footer{
   display: flex;
