@@ -143,7 +143,7 @@ h3{
  /*---------*/
 
  @media screen and ( max-width: 600px ) {
-  .photo_row { flex-direction: column; }
+  .photo_row { visibility: hidden; }
   
 }
 
