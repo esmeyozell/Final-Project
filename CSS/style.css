@@ -136,16 +136,21 @@ h3{
     width: auto;
   }
   .text_box {
-    width: 100%;
-    
-    
-    
+    width: 100%; 
   }
 }
 
  /*---------*/
 
+ @media screen and ( max-width: 600px ) {
+  .photo_row { flex-direction: column; }
+  
+}
+
 .section_three {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-family: juniper-std, sans-serif;
@@ -153,7 +158,6 @@ h3{
   background-color: ivory;
   padding-bottom: 20px;
   
-   
 }
 
 .photo_row{
@@ -211,6 +215,7 @@ h3{
 }
 
 
+
 .ml11 {
   text-align: center;
   color: var(--robe-red);
@@ -221,9 +226,11 @@ h3{
  /*---FOOTER------*/
 
 footer{
-  display: flex;
+
   background-color: pink;
   font-size: 24px;
+  
+  
 
 }
 
@@ -234,6 +241,7 @@ footer{
   justify-content: space-around;
   justify-content: space-between;
   padding-right: 20px;
+  
 }
 
 @media screen and ( max-width: 600px ) {
@@ -243,6 +251,7 @@ footer{
 li {
   list-style-type: none;
 }
+
 
 
 
