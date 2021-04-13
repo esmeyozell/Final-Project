@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-/*styling*/
-
-/*FONTS*/
-
 :root {
   --white: #f0efef;
   --hot-pink: #ff69b4;
@@ -15,6 +11,8 @@
   --semibold: 600;
   --extra-bold: 800;
 }
+
+/*FONTS*/
 
 @import url("https://use.typekit.net/yvm4rpb.css");
 
@@ -32,6 +30,7 @@ a:link {
   color: coral
 }
 
+/* MAIN AND BODY*/
 
 main{
   width: 100%;
@@ -48,24 +47,8 @@ body{
 
 }
 
-@media screen and ( max-width: 600px ) {
-  main { width: 100%; }
-}
 
-
-/*header backgroud styling*/
-@keyframes header {
-  from {background-image: linear-gradient(45deg, coral 25%, transparent 25%, transparent 75%,coral 75%, coral),
-    linear-gradient(45deg,#ff7f50, 25%, transparent 25%, transparent 75%, coral 75%, coral);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;;}
-  to {background-image: linear-gradient(45deg, pink 25%, transparent 25%, transparent 75%,pink 75%, pink),
-    linear-gradient(45deg,pink, 25%, transparent 25%, transparent 75%, pink 75%, pink);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;;}
-  }
-
- /*---------*/
+ /*----HEADER-----*/
   header{
   min-height: 200px;
   }
@@ -85,6 +68,7 @@ body{
 
 }
 
+/*----TOP NAVIGATION-----*/
   .topnav{
   display: flex;
   justify-content: space-evenly;
@@ -130,22 +114,7 @@ h3{
   
 }
 
-@media screen and ( max-width: 600px ) {
-  .hero { flex-direction: column; 
-    padding-bottom: 20px;
-    width: auto;
-  }
-  .text_box {
-    width: 100%; 
-  }
-}
-
- /*---------*/
-
- @media screen and ( max-width: 414px ) {
-  .photo_row { visibility: hidden; }
-  
-}
+ /*---SECTION THREE------*/
 
 .section_three {
   display: flex;
@@ -215,23 +184,19 @@ h3{
 }
 
 
-
 .ml11 {
   text-align: center;
   color: var(--robe-red);
   font-size: 70px;
+  
 }
 
 
  /*---FOOTER------*/
 
 footer{
-
-  background-color: pink;
-  font-size: 24px;
-  
-  
-
+background-color: pink;
+font-size: 24px;
 }
 
 .footer-menu {
@@ -244,6 +209,29 @@ footer{
   
 }
 
+
+/*---Media Queries---*/
+
+
+@media screen and ( max-width: 600px ) {
+  main { width: 100%; }
+}
+
+@media screen and ( max-width: 600px ) {
+  .hero { flex-direction: column; 
+    padding-bottom: 20px;
+    width: auto;
+  }
+  .text_box {
+    width: 100%; 
+  }
+}
+
+@media screen and ( max-width: 414px ) {
+  .photo_row { visibility: hidden; }
+  
+}
+
 @media screen and ( max-width: 600px ) {
   .footer-menu { flex-direction: column; }
 }
@@ -253,71 +241,3 @@ li {
 }
 
 
-
-
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-  height: 100%;
-  overflow:scroll;
-  background-color: white;
-
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 400px;
-  padding: 10px;
-  background-color: white;
-  
-}
-
-/* Add styles to the text in form container */
-.form-container label {
-  font-size: 18px;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/close */
-.form-container .btn {
-  background-color:pink;
-  font-family: inherit;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  margin: 10px;
-  opacity: 0.8;
-}
-
-.button-area {
-  padding-top: 20%;
-  display: flex;
-  
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
