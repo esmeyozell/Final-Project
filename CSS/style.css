@@ -179,13 +179,13 @@ h3{
 
 .row_pics{
   opacity: 1;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   display: flex;
   width: auto;
-  height: auto;
+ 
 
 }
 
