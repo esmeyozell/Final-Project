@@ -144,9 +144,7 @@ h3{
   flex: 25%;
   position: relative;
   text-align: center;
-  
-  
-}
+  }
 
 .row_pics{
   opacity: 1;
@@ -157,7 +155,7 @@ h3{
   display: flex;
   width: auto;
   position: relative;
-text-align: center;
+  text-align: center;
  
 }
 
@@ -172,17 +170,10 @@ text-align: center;
   transition: .5s ease;
   opacity: 0;
 }
-  
-
-.column:hover .row_pics {
-  opacity: 0.3;
-}
-
-.column:hover .row_pics_text {
-  opacity: 1;
-}
 
 
+
+ /*---Coming soon text------*/
 .ml11 {
   display: flex;
   align-content: center;
