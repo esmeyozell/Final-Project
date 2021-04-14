@@ -17,6 +17,14 @@ header {
       background-position: 0 0, 30px 30px;;}
     }
 
+/*---Hover Effect on Photos------*/
+.column:hover .row_pics {
+  opacity: 0.3;
+}
+
+.column:hover .row_pics_text {
+  opacity: 1;
+}
 
 /*---POPUP FORM----*/
 /* The popup form - hidden by default */
